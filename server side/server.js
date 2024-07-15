@@ -1,7 +1,7 @@
 const http = require('http');
 
 const server = http.createServer((req, res) => {
-  console.log('request made');
+  console.log(req.url, req.method);
 });
 
 // localhost is the default value for 2nd argument
